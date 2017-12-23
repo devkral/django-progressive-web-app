@@ -16,10 +16,14 @@ except:
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
+install_requirements = [
+    "django>=2",
+]
 setup(
     name='django-progressive-web-app',
     version='0.1',
     packages=find_packages(),
+    install_requires=install_requirements,
     include_package_data=True,
     license='MIT License',
     description=short_description,

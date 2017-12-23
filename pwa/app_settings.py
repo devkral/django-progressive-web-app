@@ -19,5 +19,3 @@ PWA_APP_ICONS = getattr(settings, 'PWA_APP_ICONS', [
         'sizes': '160x160'
     }
 ])
-
-

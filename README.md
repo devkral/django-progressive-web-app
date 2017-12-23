@@ -49,11 +49,11 @@ All settings are optional, and the app will work fine with its internal defaults
 
 Add the progressive web app URLs to urls.py:
 ```python
-from django.conf.urls import url, include
+from django.urls import path, include
 
 urlpatterns = [
     ...
-    url('', include('pwa.urls')),  # You MUST use an empty string as the URL prefix
+    path('', include('pwa.urls')),  # You MUST use an empty string as the URL prefix
     ...
 ]
 ```

@@ -1,6 +1,7 @@
 """ Settings required by django-progressive-web-app. """
 from django.conf import settings
 import os
+from django.urls import resolve_lazy
 
 # Path to the service worker implementation.  Default implementation is empty.
 PWA_SERVICE_WORKER_PATH = getattr(settings, 'PWA_SERVICE_WORKER_PATH', 'serviceworker.js')
@@ -12,7 +13,7 @@ PWA_APP_ROOT_URL = getattr(settings, 'PWA_APP_ROOT_URL', '/')
 PWA_APP_THEME_COLOR = getattr(settings, 'PWA_APP_THEME_COLOR', '#000')
 PWA_APP_DISPLAY = getattr(settings, 'PWA_APP_DISPLAY', 'standalone')
 PWA_APP_START_URL = getattr(settings, 'PWA_APP_START_URL', '/')
-PWA_APP_FETCH_URL = getattr(settings, 'PWA_APP_FETCH_URL', '/')
+PWA_APP_FETCH_URL = getattr(settings, 'PWA_APP_FETCH_URL', resolve_lazy("pwa_fetch_json"))
 PWA_APP_ICONS = getattr(settings, 'PWA_APP_ICONS', [
     {
         'src': '/',

@@ -80,7 +80,7 @@ While running the Django test server:
 
 Adding Your Own Service Worker
 =====
-By default, the service worker implemented by this app is empty.  To add service worker functionality, you'll want to create a `serviceworker.js` or similarly named template in a template directory, and then point at it using the PWA_SERVICE_WORKER_PATH variable (PWA_APP_FETCH_URL is passed through).
+By default, the service worker implemented by this app is empty.  To add service worker functionality, you'll want to create a `serviceworker.js` or similarly named template in a template directory, and then point at it using the PWA_SERVICE_WORKER_PATH variable.
 
 ```python
 PWA_SERVICE_WORKER_PATH = 'my_app/serviceworker.js'

@@ -12,7 +12,6 @@ PWA_APP_ROOT_URL = getattr(settings, 'PWA_APP_ROOT_URL', '/')
 PWA_APP_THEME_COLOR = getattr(settings, 'PWA_APP_THEME_COLOR', '#000')
 PWA_APP_DISPLAY = getattr(settings, 'PWA_APP_DISPLAY', 'standalone')
 PWA_APP_START_URL = getattr(settings, 'PWA_APP_START_URL', '/')
-PWA_APP_FETCH_URL = getattr(settings, 'PWA_APP_FETCH_URL', '/')
 PWA_APP_ICONS = getattr(settings, 'PWA_APP_ICONS', [
     {
         'src': '/',

@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.views.generic.base import TemplateView
+from django.views.generic import TemplateView
 
 from . import app_settings
 

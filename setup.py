@@ -17,7 +17,7 @@ except:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 install_requirements = [
-    "django>=2",
+    "django>=1.11,<3.0",
 ]
 setup(
     name='django-progressive-web-app',
@@ -34,6 +34,7 @@ setup(
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
+        'Framework :: Django :: 1.11',
         'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
